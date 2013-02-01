@@ -17,6 +17,7 @@
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js.js"></script>
 		<header>
+			<h1>Fitz Ryland</h1>
 		</header>
 		<section>
 		</section>

@@ -1,5 +1,5 @@
 body {
-  background: #efb1fd url("../images/noiseBG.gif");
+  background: #c5c5c5 url("../images/noiseBG.gif");
   color: white;
   font: 16px "Merriweather", georgia, serif;
   position: relative;
@@ -21,44 +21,23 @@ header, section, footer {
 
 header, footer {
   background-color: #322869;
-  padding: 1em; }
+  padding: 1em;
+  border-top: 0.5em solid #624dc7;
+  border-right: 0.5em solid #130f2a;
+  border-bottom: 0.5em solid #130f2a;
+  border-left: 0.5em solid #624dc7; }
 
 header {
   margin-top: 1em; }
   header img {
+    border-top: 0.2em solid #130f2a;
+    border-right: 0.2em solid #624dc7;
+    border-bottom: 0.2em solid #624dc7;
+    border-left: 0.2em solid #130f2a;
     float: right;
-    padding-left: 1em; }
+    margin-left: 1em; }
   header h1 {
     margin: 0; }
-
-.contactWrap {
-  display: block;
-  margin: 1em 0;
-  width: 316px; }
-
-.contact {
-  display: block;
-  margin: 0 auto;
-  width: 188px; }
-  .contact a:link, .contact a:visited {
-    background-image: url("../images/contactSprite.png");
-    float: left;
-    height: 52px;
-    width: 52px; }
-  .contact a:nth-child(2) {
-    margin: 0 1em; }
-  .contact a.t:link, .contact a.t:visited {
-    background-position: 2px 2px; }
-  .contact a.l:link, .contact a.l:visited {
-    background-position: -62px 2px; }
-  .contact a.e:link, .contact a.e:visited {
-    background-position: -126px 2px; }
-  .contact a.t:hover, .contact a.t:active {
-    background-position: 2px -64px; }
-  .contact a.l:hover, .contact a.l:active {
-    background-position: -62px -64px; }
-  .contact a.e:hover, .contact a.e:active {
-    background-position: -126px -64px; }
 
 section {
   padding: 0 1em; }
@@ -91,16 +70,50 @@ footer {
   header, section, footer {
     width: 316px; }
 
-  header img {
-    margin-bottom: 1em;
-    padding: 0;
-    width: 316px; }
+  header {
+    margin-top: 0; }
+    header img {
+      margin-bottom: 1em;
+      padding: 0;
+      width: 316px; }
+
+  footer {
+    margin-bottom: 0; }
 
   article img {
     display: block;
     float: none;
     margin: 0 auto;
     padding: 0; } }
+.contactWrap {
+  display: block;
+  margin: 1em 0 0;
+  width: 316px; }
+
+.contact {
+  display: block;
+  margin: 0 auto;
+  width: 188px; }
+  .contact a:link, .contact a:visited {
+    background: url("../images/contactSprite.png");
+    float: left;
+    height: 52px;
+    width: 52px; }
+  .contact a:nth-child(2) {
+    margin: 0 1em; }
+  .contact a.t:link, .contact a.t:visited {
+    background-position: 2px 2px; }
+  .contact a.l:link, .contact a.l:visited {
+    background-position: -62px 2px; }
+  .contact a.e:link, .contact a.e:visited {
+    background-position: -126px 2px; }
+  .contact a.t:hover, .contact a.t:active {
+    background-position: 2px -64px; }
+  .contact a.l:hover, .contact a.l:active {
+    background-position: -62px -64px; }
+  .contact a.e:hover, .contact a.e:active {
+    background-position: -126px -64px; }
+
 .group:before,
 .group:after {
   content: "";

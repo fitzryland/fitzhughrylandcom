@@ -5,6 +5,8 @@ $darkPurple:#130F2A;
 $white:#FFFFFF;
 $black:#000000;
 
+$bgGray:#c5c5c5;
+
 $break:800px;
 $contW:700px;
 $contWM:316px;
@@ -19,7 +21,7 @@ $bgW:1000px;
 
 
 body {
-	background:$pink url('../images/noiseBG.gif');
+	background:$bgGray url('../images/noiseBG.gif');
 	color:$white;
 	font:16px 'Merriweather', georgia, serif;
 	position:relative;
@@ -42,53 +44,23 @@ header, section, footer {
 header, footer {
 	background-color:$purple;
 	padding:1em;
+	border-top:0.5em solid $lightPurple;
+	border-right:0.5em solid $darkPurple;
+	border-bottom:0.5em solid $darkPurple;
+	border-left:0.5em solid $lightPurple;
 }
 header {
 	margin-top:1em;
 	img {
+		border-top:0.2em solid $darkPurple;
+		border-right:0.2em solid $lightPurple;
+		border-bottom:0.2em solid $lightPurple;
+		border-left:0.2em solid $darkPurple;
 		float:right;
-		padding-left:1em;
+		margin-left:1em;
 	}
 	h1 {
 		margin:0;
-	}
-}
-.contactWrap {
-	display:block;
-	margin:1em 0;
-	width:$contWM;
-}
-.contact {
-	display:block;
-	margin:0 auto;
-	width:188px;
-	a:link, a:visited {
-		background-image:url('../images/contactSprite.png');
-		float:left;
-		height:52px;
-		width:52px;
-	}
-	a:nth-child(2) {
-		margin:0 1em;
-	}
-	a.t:link, a.t:visited {
-		background-position:$twitter $top;
-	}
-	a.l:link, a.l:visited {
-		background-position:$linkedin $top;
-	}
-	a.e:link, a.e:visited {
-		background-position:$email $top;
-	}
-	
-	a.t:hover, a.t:active {
-		background-position:$twitter $bottom;
-	}
-	a.l:hover, a.l:active {
-		background-position:$linkedin $bottom;
-	}
-	a.e:hover, a.e:active {
-		background-position:$email $bottom;
 	}
 }
 section {
@@ -128,11 +100,15 @@ footer {
 		width:$contWM;
 	}
 	header {
+		margin-top:0;
 		img {
 			margin-bottom:1em;
 			padding:0;
 			width:$contWM;
 		}
+	}
+	footer {
+		margin-bottom:0;
 	}
 	article {
 		img {
@@ -143,11 +119,45 @@ footer {
 		}
 	}
 }
-@media only screen and (min-width: $break + 1) {
-	
+
+.contactWrap {
+	display:block;
+	margin:1em 0 0;
+	width:$contWM;
 }
-
-
+.contact {
+	display:block;
+	margin:0 auto;
+	width:188px;
+	a:link, a:visited {
+		background:url('../images/contactSprite.png');
+		float:left;
+		height:52px;
+		width:52px;
+	}
+	a:nth-child(2) {
+		margin:0 1em;
+	}
+	a.t:link, a.t:visited {
+		background-position:$twitter $top;
+	}
+	a.l:link, a.l:visited {
+		background-position:$linkedin $top;
+	}
+	a.e:link, a.e:visited {
+		background-position:$email $top;
+	}
+	
+	a.t:hover, a.t:active {
+		background-position:$twitter $bottom;
+	}
+	a.l:hover, a.l:active {
+		background-position:$linkedin $bottom;
+	}
+	a.e:hover, a.e:active {
+		background-position:$email $bottom;
+	}
+}
 .group:before,
 .group:after {
     content: "";

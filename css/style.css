@@ -1,0 +1,117 @@
+body {
+  background: #efb1fd url("../images/noiseBG.gif");
+  color: white;
+  font: 16px "Merriweather", georgia, serif;
+  position: relative;
+  text-shadow: 1px 1px 1px #130f2a; }
+
+a:link, a:visited {
+  background-color: #624dc7;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px white; }
+
+a:hover, a:active {
+  background-color: white;
+  color: #322869; }
+
+header, section, footer {
+  margin: 0 auto;
+  width: 700px; }
+
+header, footer {
+  background-color: #322869;
+  padding: 1em; }
+
+header {
+  margin-top: 1em; }
+  header img {
+    float: right;
+    padding-left: 1em; }
+  header h1 {
+    margin: 0; }
+
+.contactWrap {
+  display: block;
+  margin: 1em 0;
+  width: 316px; }
+
+.contact {
+  display: block;
+  margin: 0 auto;
+  width: 188px; }
+  .contact a:link, .contact a:visited {
+    background-image: url("../images/contactSprite.png");
+    float: left;
+    height: 52px;
+    width: 52px; }
+  .contact a:nth-child(2) {
+    margin: 0 1em; }
+  .contact a.t:link, .contact a.t:visited {
+    background-position: 2px 2px; }
+  .contact a.l:link, .contact a.l:visited {
+    background-position: -62px 2px; }
+  .contact a.e:link, .contact a.e:visited {
+    background-position: -126px 2px; }
+  .contact a.t:hover, .contact a.t:active {
+    background-position: 2px -64px; }
+  .contact a.l:hover, .contact a.l:active {
+    background-position: -62px -64px; }
+  .contact a.e:hover, .contact a.e:active {
+    background-position: -126px -64px; }
+
+section {
+  padding: 0 1em; }
+
+article {
+  color: #130f2a;
+  padding: 1em 0;
+  text-shadow: 1px 1px 1px white; }
+  article h2 {
+    text-align: center; }
+  article img {
+    float: left;
+    margin: 0 1em 1em 0; }
+  article a:link, article a:visited {
+    background-color: white;
+    color: #130f2a;
+    text-shadow: 0px 0px 0px #130f2a; }
+  article a:hover, article a:active {
+    background-color: #322869;
+    color: white; }
+
+article:nth-child(2) {
+  border-top: 0.2em solid #322869;
+  border-bottom: 0.2em solid #322869; }
+
+footer {
+  margin-bottom: 1em; }
+
+@media only screen and (max-width: 800px) {
+  header, section, footer {
+    width: 316px; }
+
+  header img {
+    margin-bottom: 1em;
+    padding: 0;
+    width: 316px; }
+
+  article img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 0; } }
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+.clear {
+  clear: both; }

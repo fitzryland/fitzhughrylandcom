@@ -95,6 +95,44 @@ article:nth-child(2) {
 footer {
 	margin-bottom:1em;
 }
+.contactWrap {
+	display:block;
+	margin:2.5em 0 0;
+	width:$contWM;
+}
+.contact {
+	display:block;
+	margin:0 auto;
+	width:188px;
+	a:link, a:visited {
+		background:url('../images/contactSprite.png');
+		float:left;
+		height:52px;
+		width:52px;
+	}
+	a:nth-child(2) {
+		margin:0 1em;
+	}
+	a.t:link, a.t:visited {
+		background-position:$twitter $bottom;
+	}
+	a.l:link, a.l:visited {
+		background-position:$linkedin $bottom;
+	}
+	a.e:link, a.e:visited {
+		background-position:$email $bottom;
+	}
+	
+	a.t:hover, a.t:active {
+		background-position:$twitter $top;
+	}
+	a.l:hover, a.l:active {
+		background-position:$linkedin $top;
+	}
+	a.e:hover, a.e:active {
+		background-position:$email $top;
+	}
+}
 @media only screen and (max-width: $break) {
 	header, section, footer {
 		width:$contWM;
@@ -118,46 +156,11 @@ footer {
 			padding:0;
 		}
 	}
+	.contactWrap {
+		margin:1em 0 0;
+	}
 }
 
-.contactWrap {
-	display:block;
-	margin:1em 0 0;
-	width:$contWM;
-}
-.contact {
-	display:block;
-	margin:0 auto;
-	width:188px;
-	a:link, a:visited {
-		background:url('../images/contactSprite.png');
-		float:left;
-		height:52px;
-		width:52px;
-	}
-	a:nth-child(2) {
-		margin:0 1em;
-	}
-	a.t:link, a.t:visited {
-		background-position:$twitter $top;
-	}
-	a.l:link, a.l:visited {
-		background-position:$linkedin $top;
-	}
-	a.e:link, a.e:visited {
-		background-position:$email $top;
-	}
-	
-	a.t:hover, a.t:active {
-		background-position:$twitter $bottom;
-	}
-	a.l:hover, a.l:active {
-		background-position:$linkedin $bottom;
-	}
-	a.e:hover, a.e:active {
-		background-position:$email $bottom;
-	}
-}
 .group:before,
 .group:after {
     content: "";

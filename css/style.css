@@ -66,6 +66,35 @@ article:nth-child(2) {
 footer {
   margin-bottom: 1em; }
 
+.contactWrap {
+  display: block;
+  margin: 2.5em 0 0;
+  width: 316px; }
+
+.contact {
+  display: block;
+  margin: 0 auto;
+  width: 188px; }
+  .contact a:link, .contact a:visited {
+    background: url("../images/contactSprite.png");
+    float: left;
+    height: 52px;
+    width: 52px; }
+  .contact a:nth-child(2) {
+    margin: 0 1em; }
+  .contact a.t:link, .contact a.t:visited {
+    background-position: 2px -64px; }
+  .contact a.l:link, .contact a.l:visited {
+    background-position: -62px -64px; }
+  .contact a.e:link, .contact a.e:visited {
+    background-position: -126px -64px; }
+  .contact a.t:hover, .contact a.t:active {
+    background-position: 2px 2px; }
+  .contact a.l:hover, .contact a.l:active {
+    background-position: -62px 2px; }
+  .contact a.e:hover, .contact a.e:active {
+    background-position: -126px 2px; }
+
 @media only screen and (max-width: 800px) {
   header, section, footer {
     width: 316px; }
@@ -84,36 +113,10 @@ footer {
     display: block;
     float: none;
     margin: 0 auto;
-    padding: 0; } }
-.contactWrap {
-  display: block;
-  margin: 1em 0 0;
-  width: 316px; }
+    padding: 0; }
 
-.contact {
-  display: block;
-  margin: 0 auto;
-  width: 188px; }
-  .contact a:link, .contact a:visited {
-    background: url("../images/contactSprite.png");
-    float: left;
-    height: 52px;
-    width: 52px; }
-  .contact a:nth-child(2) {
-    margin: 0 1em; }
-  .contact a.t:link, .contact a.t:visited {
-    background-position: 2px 2px; }
-  .contact a.l:link, .contact a.l:visited {
-    background-position: -62px 2px; }
-  .contact a.e:link, .contact a.e:visited {
-    background-position: -126px 2px; }
-  .contact a.t:hover, .contact a.t:active {
-    background-position: 2px -64px; }
-  .contact a.l:hover, .contact a.l:active {
-    background-position: -62px -64px; }
-  .contact a.e:hover, .contact a.e:active {
-    background-position: -126px -64px; }
-
+  .contactWrap {
+    margin: 1em 0 0; } }
 .group:before,
 .group:after {
   content: "";
